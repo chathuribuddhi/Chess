@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess</title>
+    <style>
+        table,th,td {
+            border: 3px solid black;
+            border-collapse: collapse;
+
+        }
+        th,td{
+            width: 60px;
+            height: 60px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <script>
+        /* Event fired on the drag target */
+        document.addEventListener("dragstart", function(event) {
+            event.dataTransfer.setData("Text", event.target.id);
+            document.getElementById("demo").innerHTML = "Started to drag the p element.";
+        });
+
+        /* Events fired on the drop target */
+        document.addEventListener("dragover", function(event) {
+            event.preventDefault();
+        });
+
+        document.addEventListener("drop", function(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("Text");
+            event.target.appendChild(document.getElementById(data));
+            document.getElementById("demo").innerHTML = "The p element was dropped";
+        });
+    </script>
+
+</head>
+<body>
+
+<table>
+    <tr>
+        <th style="background-color: #FDFEFE" >
+            <img src="images/blackrook.png" alt="image" width="88" height="31" draggable="true" id="dragtarget">
+        </th>
+        <th style="background-color: #515A5A" >
+            <img src="images/blackknight.png" alt="image"  width="88" height="31" draggable="true" id="dragtarget2">
+        </th>
+        <th style="background-color: #FDFEFE" >
+            <img src="images/blackbishop.png" alt="image"  width="88" height="31" draggable="true" id="dragtarget3">
+        </th>
+        <th style="background-color: #515A5A" >
+            <img src="images/blackking.png" alt="image"  width="88" height="31" draggable="true" id="dragtarget4">
+        </th>
+        <th style="background-color: #FDFEFE" >
+            <img src="images/blackqueen.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #515A5A" >
+            <img src="images/blackbishop.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #FDFEFE">
+            <img src="images/blackknight.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #515A5A" >
+            <img src="images/blackrook.png" alt="image"  width="88" height="31">
+        </th>
+    </tr>
+    <tr>
+        <th style="background-color: #515A5A" >
+            <img src="images/blackpone.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #FDFEFE" >
+            <img src="images/blackpone.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #515A5A">
+            <img src="images/blackpone.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #FDFEFE">
+            <img src="images/blackpone.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #515A5A">
+            <img src="images/blackpone.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #FDFEFE">
+            <img src="images/blackpone.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #515A5A" >
+            <img src="images/blackpone.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #FDFEFE" >
+            <img src="images/blackpone.png" alt="image" draggable="true" ondragstart="drag(event)" id="drag16" width="88" height="31">
+        </th>
+    </tr>
+    <tr>
+        <th style="background-color: #FDFEFE" ></th>
+        <th style="background-color: #515A5A" ></th>
+        <th style="background-color: #FDFEFE" ></th>
+        <th style="background-color: #515A5A" ></th>
+        <th style="background-color: #FDFEFE" ></th>
+        <th style="background-color: #515A5A" ></th>
+        <th style="background-color: #FDFEFE" ></th>
+        <th style="background-color: #515A5A"></th>
+    </tr>
+    <tr>
+        <th style="background-color: #515A5A" ></th>
+        <th style="background-color: #FDFEFE" ></th>
+        <th style="background-color: #515A5A" ></th>
+        <th style="background-color: #FDFEFE" ></th>
+        <th style="background-color: #515A5A" ></th>
+        <th style="background-color: #FDFEFE" ></th>
+        <th style="background-color: #515A5A"></th>
+        <th style="background-color: #FDFEFE" ></th>
+    </tr>
+    <tr>
+        <th style="background-color: #FDFEFE" ></th>
+        <th style="background-color: #515A5A" ></th>
+        <th style="background-color: #FDFEFE" ></th>
+        <th style="background-color: #515A5A" ></th>
+        <th style="background-color: #FDFEFE" ></th>
+        <th style="background-color: #515A5A" ></th>
+        <th style="background-color: #FDFEFE" ></th>
+        <th style="background-color: #515A5A"></th>
+    </tr>
+    <tr>
+        <th style="background-color: #515A5A" ></th>
+        <th style="background-color: #FDFEFE" ></th>
+        <th style="background-color: #515A5A" ></th>
+        <th style="background-color: #FDFEFE" ></th>
+        <th style="background-color: #515A5A" ></th>
+        <th style="background-color: #FDFEFE" ></th>
+        <th style="background-color: #515A5A"></th>
+        <th style="background-color: #FDFEFE" ></th>
+    </tr>
+    <tr>
+        <th style="background-color: #FDFEFE" >
+            <img src="images/whitepone.png" alt="image" width="88" height="31">
+        </th>
+        <th style="background-color: #515A5A" >
+            <img src="images/whitepone.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #FDFEFE">
+            <img src="images/whitepone.png" alt="image" width="88" height="31">
+        </th>
+        <th style="background-color: #515A5A" >
+            <img src="images/whitepone.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #FDFEFE">
+            <img src="images/whitepone.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #515A5A" >
+            <img src="images/whitepone.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #FDFEFE">
+            <img src="images/whitepone.png" alt="image" width="88" height="31">
+        </th>
+        <th style="background-color: #515A5A" >
+            <img src="images/whitepone.png" alt="image"  width="88" height="31">
+        </th>
+    </tr>
+    <tr>
+        <th style="background-color: #515A5A" >
+            <img src="images/whiterook.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #FDFEFE">
+            <img src="images/whiteknight.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #515A5A" >
+            <img src="images/whitebishop.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #FDFEFE">
+            <img src="images/whitequeen.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #515A5A" >
+            <img src="images/whiteking.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #FDFEFE" >
+            <img src="images/whitebishop.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #515A5A" >
+            <img src="images/whiteknight.png" alt="image"  width="88" height="31">
+        </th>
+        <th style="background-color: #FDFEFE" >
+            <img src="images/whiterook.png" alt="image"  width="88" height="31">
+        </th>
+    </tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess</title>
+
+    <link href="css/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+
+
+<table>
+
+
+    <tr>
+        <th id="th" style="background-color: #FDFEFE"><p draggable="true" id="dragtarget" >&#9814;</p></th>
+        <th id="th1" style="background-color: #515A5A"><p draggable="true" id="dragtarget2">&#9816;</p></th>
+        <th id="th2" style="background-color: #FDFEFE"><p draggable="true" id="dragtarget3">&#9815;</p></th>
+        <th id="th3" style="background-color: #515A5A"><p draggable="true" id="dragtarget4">&#9813;</p></th>
+        <th id="th4" style="background-color: #FDFEFE"><p draggable="true" id="dragtarget5">&#9812;</p></th>
+        <th id="th5" style="background-color: #515A5A"><p draggable="true" id="dragtarget6">&#9815;</p></th>
+        <th id="th6" style="background-color: #FDFEFE"><p draggable="true" id="dragtarget7">&#9816;</p></th>
+        <th id="th7" style="background-color: #515A5A"><p draggable="true" id="dragtarget8">&#9814;</p></th>
+
+    </tr>
+    <tr>
+        <th id="th8" style="background-color: #515A5A"><p draggable="true" id="dragtarget9">&#9817;</p></th>
+        <th id="th9" style="background-color: #FDFEFE"><p draggable="true" id="dragtarget10">&#9817;</p></th>
+        <th id="th10" style="background-color: #515A5A"><p draggable="true" id="dragtarget11">&#9817;</p></th>
+        <th id="th11" style="background-color: #FDFEFE"><p draggable="true" id="dragtarget12">&#9817;</p></th>
+        <th id="th12" style="background-color: #515A5A"><p draggable="true" id="dragtarget13">&#9817;</p></th>
+        <th id="th13" style="background-color: #FDFEFE"><p draggable="true" id="dragtarget14">&#9817;</p></th>
+        <th id="th14" style="background-color: #515A5A"><p draggable="true" id="dragtarget15">&#9817;</p></th>
+        <th id="th15" style="background-color: #FDFEFE"><p draggable="true" id="dragtarget16">&#9817;</p></th>
+
+    </tr>
+    <tr>
+        <th id="th16" style="background-color: #FDFEFE"></th>
+        <th id="th17" style="background-color: #515A5A"></th>
+        <th id="th18" style="background-color: #FDFEFE"></th>
+        <th id="th19" style="background-color: #515A5A"></th>
+        <th id="th20" style="background-color: #FDFEFE"></th>
+        <th id="th21" style="background-color: #515A5A"></th>
+        <th id="th22" style="background-color: #FDFEFE"></th>
+        <th id="th23" style="background-color: #515A5A"></th>
+
+    </tr>
+    <tr>
+        <th id="th24" style="background-color: #515A5A"></th>
+        <th id="th25" style="background-color: #FDFEFE"></th>
+        <th id="th26" style="background-color: #515A5A"></th>
+        <th id="th27" style="background-color: #FDFEFE"></th>
+        <th id="th28" style="background-color: #515A5A"></th>
+        <th id="th29" style="background-color: #FDFEFE"></th>
+        <th id="th30" style="background-color: #515A5A"></th>
+        <th id="th31" style="background-color: #FDFEFE"></th>
+
+    </tr>
+    <tr>
+        <th id="th32" style="background-color: #FDFEFE"></th>
+        <th id="th33" style="background-color: #515A5A"></th>
+        <th id="th34" style="background-color: #FDFEFE"></th>
+        <th id="th35" style="background-color: #515A5A"></th>
+        <th id="th36" style="background-color: #FDFEFE"></th>
+        <th id="th37" style="background-color: #515A5A"></th>
+        <th id="th38" style="background-color: #FDFEFE"></th>
+        <th id="th39" style="background-color: #515A5A"></th>
+
+    </tr>
+    <tr>
+        <th id="th40" style="background-color: #515A5A"></th>
+        <th id="th41" style="background-color: #FDFEFE"></th>
+        <th id="th42" style="background-color: #515A5A"></th>
+        <th id="th43" style="background-color: #FDFEFE"></th>
+        <th id="th44" style="background-color: #515A5A"></th>
+        <th id="th45" style="background-color: #FDFEFE"></th>
+        <th id="th46" style="background-color: #515A5A"></th>
+        <th id="th47" style="background-color: #FDFEFE"></th>
+
+    </tr>
+    <tr>
+        <th id="th48" style="background-color: #FDFEFE"><p draggable="true" id="dragtarget17">&#9823;</p></th>
+        <th id="th49" style="background-color: #515A5A"><p draggable="true" id="dragtarget18">&#9823;</p></th>
+        <th id="th50" style="background-color: #FDFEFE"><p draggable="true" id="dragtarget19">&#9823;</p></th>
+        <th id="th51" style="background-color: #515A5A"><p draggable="true" id="dragtarget20">&#9823;</p></th>
+        <th id="th52" style="background-color: #FDFEFE"><p draggable="true" id="dragtarget21">&#9823;</p></th>
+        <th id="th53" style="background-color: #515A5A"><p draggable="true" id="dragtarget22">&#9823;</p></th>
+        <th id="th54" style="background-color: #FDFEFE"><p draggable="true" id="dragtarget23">&#9823;</p></th>
+        <th id="th55" style="background-color: #515A5A"><p draggable="true" id="dragtarget24">&#9823;</p></th>
+
+    </tr>
+    <tr>
+        <th id="th56" style="background-color: #515A5A"><p draggable="true" id="dragtarget25">&#9820;</p></th>
+        <th id="th57" style="background-color: #FDFEFE"><p draggable="true" id="dragtarget26">&#9822;</p></th>
+        <th id="th58" style="background-color: #515A5A"><p draggable="true" id="dragtarget27">&#9821;</p></th>
+        <th id="th59" style="background-color: #FDFEFE"><p draggable="true" id="dragtarget28">&#9818;</p></th>
+        <th id="th60" style="background-color: #515A5A"><p draggable="true" id="dragtarget29">&#9819;</p></th>
+        <th id="th61" style="background-color: #FDFEFE"><p draggable="true" id="dragtarget30">&#9821;</p></th>
+        <th id="th62" style="background-color: #515A5A"><p draggable="true" id="dragtarget31">&#9822;</p></th>
+        <th id="th63" style="background-color: #FDFEFE"><p draggable="true" id="dragtarget32">&#9820;</p></th>
+
+    </tr>
+
+
+</table>
+
+<script type="text/javascript" src="js/js.js"></script>
+</body>
+

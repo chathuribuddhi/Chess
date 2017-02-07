@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess</title>
+    <style>
+        table,th,td {
+            border: 3px solid black;
+            border-collapse: collapse;
+
+        }
+        th,td{
+            width: 60px;
+            height: 60px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#draggable" ).draggable();
+            $( "#droppable" ).droppable({
+                drop: function( event, ui ) {
+                    $( this )
+                            .addClass( "ui-state-highlight" )
+                            .find( "p" )
+                            .html( "Dropped!" );
+                }
+            });
+        } );
+    </script>
+
+</head>
+<body>
+
+<table>
+
+
+    <tr>
+        <th style="background-color: #FDFEFE">
+            <div id="draggable" class="ui-widget-content">
+                <p>&#9814;</p>
+            </div>
+
+            <div id="droppable" class="ui-widget-header">
+
+            </div>
+            </th>
+        <th style="background-color: #515A5A">
+            <div id="draggable2" class="ui-widget-content">
+                <p>&#9816;</p>
+            </div>
+
+            <div id="droppable2" class="ui-widget-header">
+
+            </div>
+            </th>
+        <th style="background-color: #FDFEFE">&#9815;</th>
+        <th style="background-color: #515A5A">&#9813;</th>
+        <th style="background-color: #FDFEFE">&#9812;</th>
+        <th style="background-color: #515A5A">&#9815;</th>
+        <th style="background-color: #FDFEFE">&#9816;</th>
+        <th style="background-color: #515A5A">&#9814;</th>
+
+    </tr>
+    <tr>
+        <th style="background-color: #515A5A">&#9817;</th>
+        <th style="background-color: #FDFEFE">&#9817;</th>
+        <th style="background-color: #515A5A">&#9817;</th>
+        <th style="background-color: #FDFEFE">&#9817;</th>
+        <th style="background-color: #515A5A">&#9817;</th>
+        <th style="background-color: #FDFEFE">&#9817;</th>
+        <th style="background-color: #515A5A">&#9817;</th>
+        <th style="background-color: #FDFEFE">&#9817;</th>
+
+    </tr>
+    <tr>
+        <th style="background-color: #FDFEFE"></th>
+        <th style="background-color: #515A5A"></th>
+        <th style="background-color: #FDFEFE"></th>
+        <th style="background-color: #515A5A"></th>
+        <th style="background-color: #FDFEFE"></th>
+        <th style="background-color: #515A5A"></th>
+        <th style="background-color: #FDFEFE"></th>
+        <th style="background-color: #515A5A"></th>
+
+    </tr>
+    <tr>
+        <th style="background-color: #515A5A"></th>
+        <th style="background-color: #FDFEFE"></th>
+        <th style="background-color: #515A5A"></th>
+        <th style="background-color: #FDFEFE"></th>
+        <th style="background-color: #515A5A"></th>
+        <th style="background-color: #FDFEFE"></th>
+        <th style="background-color: #515A5A"></th>
+        <th style="background-color: #FDFEFE"></th>
+
+    </tr>
+    <tr>
+        <th style="background-color: #FDFEFE"></th>
+        <th style="background-color: #515A5A"></th>
+        <th style="background-color: #FDFEFE"></th>
+        <th style="background-color: #515A5A"></th>
+        <th style="background-color: #FDFEFE"></th>
+        <th style="background-color: #515A5A"></th>
+        <th style="background-color: #FDFEFE"></th>
+        <th style="background-color: #515A5A"></th>
+
+    </tr>
+    <tr>
+        <th style="background-color: #515A5A"></th>
+        <th style="background-color: #FDFEFE"></th>
+        <th style="background-color: #515A5A"></th>
+        <th style="background-color: #FDFEFE"></th>
+        <th style="background-color: #515A5A"></th>
+        <th style="background-color: #FDFEFE"></th>
+        <th style="background-color: #515A5A"></th>
+        <th style="background-color: #FDFEFE"></th>
+
+    </tr>
+    <tr>
+        <th style="background-color: #FDFEFE">&#9823;</th>
+        <th style="background-color: #515A5A">&#9823;</th>
+        <th style="background-color: #FDFEFE">&#9823;</th>
+        <th style="background-color: #515A5A">&#9823;</th>
+        <th style="background-color: #FDFEFE">&#9823;</th>
+        <th style="background-color: #515A5A">&#9823;</th>
+        <th style="background-color: #FDFEFE">&#9823;</th>
+        <th style="background-color: #515A5A">&#9823;</th>
+
+    </tr>
+    <tr>
+        <th style="background-color: #515A5A">&#9820;</th>
+        <th style="background-color: #FDFEFE">&#9822;</th>
+        <th style="background-color: #515A5A">&#9821;</th>
+        <th style="background-color: #FDFEFE">&#9818;</th>
+        <th style="background-color: #515A5A">&#9819;</th>
+        <th style="background-color: #FDFEFE">&#9821;</th>
+        <th style="background-color: #515A5A">&#9822;</th>
+        <th style="background-color: #FDFEFE">&#9820;</th>
+
+    </tr>
+
+
+</table>
+
+</body>
