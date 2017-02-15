@@ -5,7 +5,7 @@
 /* Event fired on the drag target */
 document.addEventListener("dragstart", function(event) {
     event.dataTransfer.setData("Text", event.target.id);
-    document.getElementById("demo").innerHTML = "Started to drag the p element.";
+    //document.getElementById("demo").innerHTML = "Started to drag the p element.";
 });
 
 /* Events fired on the drop target */
@@ -17,9 +17,17 @@ document.addEventListener("drop", function(event) {
     event.preventDefault();
     var data = event.dataTransfer.getData("Text");
     event.target.appendChild(document.getElementById(data));
-    document.getElementById("demo").innerHTML = "The p element was dropped";
+    //document.getElementById("demo").innerHTML = "The p element was dropped";
 });
 
+$(document).ready(function () {
+
+
+    if($('#th').children().length == 2){
+        $("#th").children().eq(1).remove();
+    }
+
+});
 
 
 // White Rook 1
