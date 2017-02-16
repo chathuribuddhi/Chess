@@ -16,7 +16,12 @@ document.addEventListener("dragover", function(event) {
 document.addEventListener("drop", function(event) {
     event.preventDefault();
     var data = event.dataTransfer.getData("Text");
-    event.target.appendChild(document.getElementById(data));
+    var square = event.target;
+    if(event.target.tagName=='P'){
+    	square = square.parentElement;
+    }
+    square.appendChild(document.getElementById(data));
+    square.childNodes[0].remove();
     //document.getElementById("demo").innerHTML = "The p element was dropped";
 });
 
